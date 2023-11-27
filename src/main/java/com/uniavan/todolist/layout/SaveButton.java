@@ -1,4 +1,4 @@
-package com.uniavan.todolist;
+package com.uniavan.todolist.layout;
 
 import javax.imageio.ImageIO;
 import javax.swing.*;
