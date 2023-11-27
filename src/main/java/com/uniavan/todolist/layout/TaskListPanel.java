@@ -116,7 +116,6 @@ public class TaskListPanel {
 
         columnsWidth();
 
-
         JPopupMenu popupMenu = new JPopupMenu();
         JMenuItem deleteItem = new JMenuItem("Deletar");
         popupMenu.add(deleteItem);
@@ -165,7 +164,6 @@ public class TaskListPanel {
         PropertyChangeListener propertyListener = new PropertyChangeListener() {
             @Override
             public void propertyChange(PropertyChangeEvent evt) {
-                // Verifica se a propriedade transferHandler mudou
                 if (evt.getPropertyName().equals("dropLocation")) {
                     isEdited = true;
                 }

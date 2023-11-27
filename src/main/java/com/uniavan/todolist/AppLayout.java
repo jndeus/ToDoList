@@ -17,7 +17,6 @@ public class AppLayout extends JFrame {
         setLocationRelativeTo(null);
         setResizable(false);
 
-
         contentPanel = new JPanel();
         cardLayout = new CardLayout();
         contentPanel.setLayout(cardLayout);
@@ -44,8 +43,6 @@ public class AppLayout extends JFrame {
         addWindowListener(new WindowAdapter() {
             public void windowClosing(WindowEvent e) {
                 if (listPanel.isEdited()) {
-
-
                     int confirmed = JOptionPane.showConfirmDialog(null,
                             "Você não salvou as alterações na ToDo List, fechar mesmo assim?", "Fechar ToDo List",
                             JOptionPane.YES_NO_OPTION);
