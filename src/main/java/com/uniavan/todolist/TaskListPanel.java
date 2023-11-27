@@ -126,6 +126,7 @@ public class TaskListPanel {
                 isEdited = true;
                 TaskTableModel model = (TaskTableModel) tableList.getModel();
                 int row = tableList.getSelectedRow();
+                if (row < 0) return;
                 model.removeRow(row);
                 Tasks = model.getTasks();
             }
